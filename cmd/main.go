@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/packman80/queue"
 )
 
 func main() {
-	q := NewQueue[string]()
+	q := queue.NewQueue[string]()
 
 	// Добавление элементов
 	q.PushFront("1")
